@@ -1,0 +1,29 @@
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+ 
+    
+   <security-constraint>
+      <web-resource-collection>
+         <web-resource-name>SecuredBookSite</web-resource-name>
+         <url-pattern>/index.jsp</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+      </web-resource-collection>
+      
+      <auth-constraint>
+         <description>Let only managers use this app</description>
+         <role-name>employee</role-name>
+      </auth-constraint>
+   </security-constraint>
+   
+   <security-role>
+      <role-name>employee</role-name>
+   </security-role>
+   
+   <login-config>
+      <auth-method>FORM</auth-method>
+      <form-login-config>
+         <form-login-page>/login.jsp</form-login-page>
+         <form-error-page>/error.jsp</form-error-page>
+      </form-login-config>
+   </login-config> 
+</web-app>

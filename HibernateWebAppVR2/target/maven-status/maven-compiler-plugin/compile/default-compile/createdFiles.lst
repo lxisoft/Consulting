@@ -1,0 +1,8 @@
+com\lxisoft\byta\impl\UserDAO.class
+com\lxisoft\byta\impl\PostDAOImpl.class
+com\lxisoft\byta\impl\PostDAO.class
+com\lxisoft\byta\model\Post.class
+com\lxisoft\byta\model\User.class
+com\lxisoft\byta\impl\UserDaoImpl.class
+com\lxisoft\byta\controller\UserController.class
+com\lxisoft\byta\controller\PostController.class
